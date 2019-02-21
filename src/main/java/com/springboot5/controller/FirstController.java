@@ -10,6 +10,8 @@ public class FirstController {
     @RequestMapping("/first")
     public ModelAndView first() {
         ModelAndView mv = new ModelAndView();
+        mv.setViewName("first");
+        mv.addObject("object", new Object());
         return mv;
     }
 }
