@@ -7,10 +7,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class FirstController {
 
-    @RequestMapping("/first")
+    @RequestMapping("/demo1")
     public ModelAndView first() {
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("first");
+        mv.setViewName("demo1");
         mv.addObject("object", new Object());
         return mv;
     }

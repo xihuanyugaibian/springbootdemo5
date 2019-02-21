@@ -1,0 +1,23 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bcs?serverTimezone=GMT%2B8
+    username: root
+  thymeleaf:
+    cache: false
+  jackson:
+    date-format: yyyy-MM-dd
+  mvc:
+    date-format: yyyy-MM-dd
+
+
+logging:
+  level:
+    com.springboot5.dao: debug
+
+pagehelper:
+  helper-dialect: mysql
+  support-methods-arguments: true
+  params: pageNum,pageSize
